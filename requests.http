@@ -1,0 +1,26 @@
+### All genres
+GET http://localhost:3000/api/genres
+
+### One genre
+GET http://localhost:3000/api/genres/1
+
+### Create a genre
+POST http://localhost:3000/api/genres
+Content-Type: application/json
+
+{ "name": "Comedy" }
+
+### Invalid genre (400)
+POST http://localhost:3000/api/genres
+Content-Type: application/json
+
+{ "name": "ab" }
+
+### Update a genre
+PUT http://localhost:3000/api/genres/1
+Content-Type: application/json
+
+{ "name": "Action & Adventure" }
+
+### Delete a genre
+DELETE http://localhost:3000/api/genres/4
