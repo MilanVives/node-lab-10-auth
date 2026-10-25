@@ -11,7 +11,7 @@ npm install
 npm test
 ```
 
-`npm test` runs the same checks as the autograder, against a temporary in-memory MongoDB. Run a single requirement with `npm test -- --test-name-pattern="^R1:"`.
+`npm test` runs the same checks as the autograder, against a temporary in-memory MongoDB. Run a single requirement with `node --test --test-name-pattern="^R1:" "test/**/*.test.js"`.
 
 The private key for signing tokens never goes in a file. Add `"jwtPrivateKey": ""` to `config/default.json` and map it in `config/custom-environment-variables.json` to the environment variable `vivesbib_jwtPrivateKey`. Before `npm run dev`:
 
